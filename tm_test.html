@@ -1,0 +1,25 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Audio classifier</title>
+       
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.1.2/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.3.8/dist/speech-commands.min.js"></script>
+    </head>
+    <body>
+        <h2>Audio classifier on Microphone</h2>
+        <canvas id="canvas" width="100" height="100"></canvas>
+        <div>
+            <p>Class "Blue"(Say "Blue" to the microphone), confidence: <span id="prob0">...</span></p>
+            <p>Class "Green", confidence: <span id="prob1">...</span></p>
+            <p>Class "Orange, confidence: <span id="prob2">...</span></p>
+            <p>Class "Red", confidence: <span id="prob3">...</span></p>
+            <p>Class "Yellow", confidence: <span id="prob4">...</span></p>
+            <p>Class "_background_noise_", confidence: <span id="prob5">...</span></p>
+        </div>
+        <script src="ui.js"></script>
+        <script src="sketch.js"></script>
+    </body>
+
+</html>
